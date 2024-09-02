@@ -9,13 +9,22 @@
     public class EventHandlers
     {
         private readonly Plugin plugin;
+        private bool isPlayerLeftHandlerAdded = false;
         public EventHandlers(Plugin plugin) => this.plugin = plugin;
-        public void OnWaitingForPlayers() => Exiled.Events.Handlers.Player.Left += OnLeft;
+        public void OnWaitingForPlayers()
+        {
+            if (!isPlayerLeftHandlerAdded)
+            {
+                Exiled.Events.Handlers.Player.Left += OnLeft;
+                isPlayerLeftHandlerAdded = true;
+            }
+        }
         public void OnLeft(LeftEventArgs ev)
         {
             if (Round.ElapsedTime.TotalSeconds > Plugin.Instance.Config.DcScpReplaceTimeout)
             {
                 Exiled.Events.Handlers.Player.Left -= OnLeft;
+                isPlayerLeftHandlerAdded = false;
                 return;
             }
 
@@ -46,7 +55,7 @@
                 }    
             }
             Exiled.Events.Handlers.Map.AnnouncingScpTermination += ScpTerminationAnnouncement;
-            //newscp.Broadcast(Plugin.Instance.Translation.NowYouAreScp,true);
+            newscp.Broadcast(Plugin.Instance.Translation.NowYouAreScp,true);
         }
         public void ScpTerminationAnnouncement(AnnouncingScpTerminationEventArgs ev)
         {

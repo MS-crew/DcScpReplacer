@@ -30,7 +30,7 @@ This is the initial release of the plugin. We welcome any feedback, bug reports,
 - **Contact:** [discerrahidenetim@gmail.com](mailto:discerrahidenetim@gmail.com)
 
 Thank you for using our plugin and helping us improve it!
-### Default Config
+## Default Config
 ```yml
 # Should the plugin be active?
 s_enabled: true

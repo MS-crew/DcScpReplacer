@@ -1,6 +1,6 @@
 <h1 align="center">Dc Scp Replacer</h1>
 <div align="center">
-<a href="https://github.com/MS-crew/DcScpReplacer"><img src="https://img.shields.io/github/actions/workflow/status/Exiled-Team/EXILED/main.yml?style=for-the-badge&logo=githubactions&label=build"/> href="https://github.com/MS-crew/DcScpReplacer" alt="GitHub Source Code"></a>
+<a href="https://github.com/MS-crew/DcScpReplacer"><img src="https://img.shields.io/github/actions/workflow/status/Exiled-Team/EXILED/main.yml?style=for-the-badge&logo=githubactions&label=build" href="https://github.com/MS-crew/DcScpReplacer" alt="GitHub Source Code"></a>
 <a href="https://github.com/MS-crew/DcScpReplacer/releases"><img src="https://img.shields.io/badge/Build-1.1.0-brightgreen?style=for-the-badge&logo=gitbook" href="https://github.com/MS-crew/DcScpReplacer/releases" alt="GitHub Releases"></a>
 
 

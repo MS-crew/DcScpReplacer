@@ -1,7 +1,7 @@
 ﻿namespace DcScpReplacer
 {
-    using System.Linq;
     using DcScpReplacer.Model;
+    using Exiled.API.Extensions;
     using Exiled.API.Features;
     using Exiled.Events.EventArgs.Map;
     using Exiled.Events.EventArgs.Player;
@@ -31,17 +31,17 @@
             if (!ev.Player.IsScp || ev.Player.Role == RoleTypeId.Scp0492)
                 return;
 
-            Player? newscp = null;
-
             if (Plugin.Instance.Config.ReplaceRolesfordcscp is null)
             {
-                Log.Info($"replace_rolesfordcscp list is empty!Should be not!!!");
+                Log.Info($"replace_rolesfordcscp list is empty!Should be not, check your config file!!!");
                 return;
             }
 
+            Player? newscp = null;
+
             foreach (RoleTypeId role in Plugin.Instance.Config.ReplaceRolesfordcscp)
             {
-                newscp ??= Player.List.FirstOrDefault(x => x.Role == role);
+                newscp ??= Player.List.GetRandomValue(x => x.Role == role);
                 if (newscp != null)
                 {
                   break;
@@ -64,7 +64,6 @@
                     Map.Broadcast(3,ScpReplaceMessage);
                 }    
             }
-
             Exiled.Events.Handlers.Map.AnnouncingScpTermination += ScpTerminationAnnouncement;
             newscp.Broadcast(Plugin.Instance.Translation.NowYouAreScp,true);
         }

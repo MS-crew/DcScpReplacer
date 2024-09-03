@@ -2,6 +2,7 @@
 <div align="center">
 <a href="https://github.com/MS-crew/DcScpReplacer"><img src="https://img.shields.io/github/actions/workflow/status/Exiled-Team/EXILED/main.yml?style=for-the-badge&logo=githubactions&label=build" href="https://github.com/MS-crew/DcScpReplacer" alt="GitHub Source Code"></a>
 <a href="https://github.com/MS-crew/DcScpReplacer/releases"><img src="https://img.shields.io/badge/Build-1.1.0-brightgreen?style=for-the-badge&logo=gitbook" href="https://github.com/MS-crew/DcScpReplacer/releases" alt="GitHub Releases"></a>
+<a href="https://github.com/ExMod-Team/EXILED"><img src="https://img.shields.io/badge/Exiled-8.11.0-red?style=for-the-badge&logo=gitbook" href="https://github.com/ExMod-Team/EXILED" alt="GitHub Exiled"></a>
 
 
 This plugin for SCP: Secret Laboratory replaces exiting SCP players with new players, eliminating the need for mods or admin intervention. The plugin provides a range of customizable features to enhance your server's gameplay experience.

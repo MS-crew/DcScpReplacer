@@ -22,7 +22,7 @@ This plugin for SCP: Secret Laboratory replaces exiting SCP players with new pla
 3. Configure the plugin according to your server’s needs using the provided settings.
 4. Restart your server to apply the changes.
 
-### Feedback and Issues
+## Feedback and Issues
 
 This is the initial release of the plugin. We welcome any feedback, bug reports, or suggestions for improvements.
 

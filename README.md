@@ -1,7 +1,7 @@
 <h1 align="center">Dc Scp Replacer</h1>
 <div align="center">
 <a href="https://github.com/MS-crew/DcScpReplacer"><img src="https://img.shields.io/github/actions/workflow/status/Exiled-Team/EXILED/main.yml?style=for-the-badge&logo=githubactions&label=build" href="https://github.com/MS-crew/DcScpReplacer" alt="GitHub Source Code"></a>
-<a href="https://github.com/MS-crew/DcScpReplacer/releases"><img src="https://img.shields.io/badge/Build-1.1.0-brightgreen?style=for-the-badge&logo=gitbook" href="https://github.com/MS-crew/DcScpReplacer/releases" alt="GitHub Releases"></a>
+<a href="https://github.com/MS-crew/DcScpReplacer/releases"><img src="https://img.shields.io/badge/Build-1.2.1-brightgreen?style=for-the-badge&logo=gitbook" href="https://github.com/MS-crew/DcScpReplacer/releases" alt="GitHub Releases"></a>
 <a href="https://github.com/MS-crew/DcScpReplacer/blob/master/LICENSE"><img src="https://img.shields.io/badge/Licence-GNU_3.0-blue?style=for-the-badge&logo=gitbook" href="https://github.com/MS-crew/DcScpReplacer/blob/master/LICENSE" alt="General Public License v3.0"></a>
 <a href="https://github.com/ExMod-Team/EXILED"><img src="https://img.shields.io/badge/Exiled-8.11.0-red?style=for-the-badge&logo=gitbook" href="https://github.com/ExMod-Team/EXILED" alt="GitHub Exiled"></a>
 

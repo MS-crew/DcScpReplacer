@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# CS1591: Genel olarak görülebilir tür veya üye için eksik XML açıklaması
+dotnet_diagnostic.CS1591.severity = none
+
+# CS8632: Boş değer atanabilir başvuru türleri için ek açıklama kodda yalnızca bir '#nullable' ek açıklama bağlamı içinde kullanılmalıdır.
+dotnet_diagnostic.CS8632.severity = none

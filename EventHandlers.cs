@@ -6,6 +6,8 @@
     using Exiled.Events.EventArgs.Map;
     using Exiled.Events.EventArgs.Player;
     using PlayerRoles;
+    using System.Linq;
+
     public class EventHandlers
     {
         private readonly Plugin plugin;
@@ -63,6 +65,10 @@
                     string ScpReplaceMessage = Plugin.Instance.Translation.ScpReplaced.Replace("$Scprole", newscp.Role.Type.ToString());
                     Map.Broadcast(3,ScpReplaceMessage);
                 }    
+            }
+            if (Ragdoll.GetLast(ev.Player)!=null)
+            {
+                Ragdoll.GetLast(ev.Player).Destroy();
             }
             Exiled.Events.Handlers.Map.AnnouncingScpTermination += ScpTerminationAnnouncement;
             newscp.Broadcast(Plugin.Instance.Translation.NowYouAreScp,true);

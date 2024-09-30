@@ -5,6 +5,7 @@
     using Exiled.API.Features;
     using Exiled.Events.EventArgs.Map;
     using Exiled.Events.EventArgs.Player;
+    using Mirror;
     using PlayerRoles;
     using System.Linq;
 
@@ -68,7 +69,7 @@
             }
             if (Ragdoll.GetLast(ev.Player)!=null)
             {
-                Ragdoll.GetLast(ev.Player).Destroy();
+                NetworkServer.Destroy(Ragdoll.GetLast(ev.Player).GameObject);
             }
             Exiled.Events.Handlers.Map.AnnouncingScpTermination += ScpTerminationAnnouncement;
             newscp.Broadcast(Plugin.Instance.Translation.NowYouAreScp,true);
